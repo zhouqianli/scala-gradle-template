@@ -1,0 +1,17 @@
+apply plugin: 'scala'
+apply plugin: 'java'
+
+defaultTasks 'build'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+group = 'com.yahoo.upp'
+version = '1.0'
+buildDir = "target"
+
+dependencies{
+    compile("org.scala-lang:scala-library:2.10.3")
+}
